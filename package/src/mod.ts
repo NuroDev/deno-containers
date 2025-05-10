@@ -1,3 +1,4 @@
+import { BaseClient } from '~/base.ts';
 import { ImageClient } from '~/image.ts';
 
 import type { ClientOptions } from '~/base.ts';
@@ -5,13 +6,14 @@ import type { ClientOptions } from '~/base.ts';
 /**
  * @todo Add documentation
  */
-export class Client {
+export class Client extends BaseClient {
 	/**
 	 * @todo Add documentation
 	 */
 	public images: ImageClient;
 
-	constructor(options: ClientOptions = {}) {
+	constructor(options: Partial<ClientOptions> = {}) {
+		super(options);
 		this.images = new ImageClient(options);
 	}
 }

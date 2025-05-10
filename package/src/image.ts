@@ -7,7 +7,9 @@ export class ImageClient extends BaseClient {
 	/**
 	 * @todo Add documentation
 	 */
-	public list(): Promise<Array<unknown>> {
-		return Promise.resolve([]);
+	public async list(): Promise<Array<unknown>> {
+		// TODO(@nurodev): Add `!response.ok` check.
+		const response = await this.get('/images/json');
+		return await response.json();
 	}
 }
