@@ -1,0 +1,7 @@
+{
+	"name": "@example/list-images",
+	"exports": {},
+	"tasks": {
+		"start": "deno run -A main.ts"
+	}
+}
