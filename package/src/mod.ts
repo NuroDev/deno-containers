@@ -1,5 +1,5 @@
 import { BaseClient } from '~/base.ts';
-import { ImageClient } from './image/client.ts';
+import { ImageClient } from '~/image/mod.ts';
 
 import type { ClientOptions } from '~/base.ts';
 
