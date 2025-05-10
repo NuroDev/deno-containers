@@ -30,7 +30,7 @@ export class BaseClient {
 	private async request(
 		options: {
 			endpoint: string;
-			method: 'GET' | 'POST';
+			method: 'GET' | 'POST' | 'DELETE';
 			body?: object;
 		},
 	): Promise<Response> {
@@ -183,6 +183,17 @@ export class BaseClient {
 		return this.request({
 			endpoint,
 			method: 'POST',
+			body,
+		});
+	}
+
+	/**
+	 * @todo Add documentation
+	 */
+	protected delete(endpoint: string, body: object) {
+		return this.request({
+			endpoint,
+			method: 'DELETE',
 			body,
 		});
 	}
