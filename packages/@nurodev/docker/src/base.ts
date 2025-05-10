@@ -169,7 +169,7 @@ export class BaseClient {
 	/**
 	 * @todo Add documentation
 	 */
-	protected get(endpoint: string) {
+	protected get(endpoint: string): Promise<Response> {
 		return this.request({
 			endpoint,
 			method: 'GET',
@@ -179,7 +179,7 @@ export class BaseClient {
 	/**
 	 * @todo Add documentation
 	 */
-	protected post(endpoint: string, body: object) {
+	protected post(endpoint: string, body: object): Promise<Response> {
 		return this.request({
 			endpoint,
 			method: 'POST',
@@ -190,7 +190,7 @@ export class BaseClient {
 	/**
 	 * @todo Add documentation
 	 */
-	protected delete(endpoint: string, body: object) {
+	protected delete(endpoint: string, body: object): Promise<Response> {
 		return this.request({
 			endpoint,
 			method: 'DELETE',
