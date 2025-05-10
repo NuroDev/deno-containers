@@ -14,10 +14,14 @@ jobs:
     permissions:
       contents: read
       id-token: write # The OIDC ID token is used for authentication with JSR.
+    strategy:
+      fail-fast: false
+      matrix:
+        package: [docker]
     steps:
       - name: Clone repository
         uses: actions/checkout@v4
 
       - name: Publish to JSR
         run: npx jsr publish
-        working-directory: ./package/
+        working-directory: ./packages/@nurodev/${{ matrix.package }}
