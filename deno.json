@@ -1,0 +1,17 @@
+{
+	"fmt": {
+		"indentWidth": 4,
+		"semiColons": true,
+		"singleQuote": true,
+		"useTabs": true
+	},
+	"lint": {
+		"rules": {}
+	},
+	"tasks": {
+	},
+	"workspace": [
+		"./examples/*",
+		"./packages/@nurodev/*"
+	]
+}
