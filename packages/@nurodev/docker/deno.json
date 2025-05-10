@@ -1,6 +1,6 @@
 {
-	"name": "@nurodev/containers",
-	"version": "0.0.2",
+	"name": "@nurodev/docker",
+	"version": "0.0.0",
 	"license": "MIT",
 	"publish": {
 		"include": [

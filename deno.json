@@ -13,6 +13,6 @@
 	},
 	"workspace": [
 		"./examples/*",
-		"./package/"
+		"./packages/@nurodev/*"
 	]
 }
