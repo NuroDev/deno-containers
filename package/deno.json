@@ -2,6 +2,16 @@
 	"name": "@nurodev/containers",
 	"version": "0.0.1",
 	"license": "MIT",
+	"publish": {
+		"include": [
+			"LICENSE",
+			"README.md",
+			"src/**/*.ts"
+		],
+		"exclude": [
+			"src/**/*.test.ts"
+		]
+	},
 	"imports": {
 		"~/": "./src/"
 	},
