@@ -1,0 +1,23 @@
+name: Publish
+
+on:
+  push:
+    branches:
+      - main
+
+concurrency: ${{ github.workflow }}-${{ github.ref }}
+
+jobs:
+  publish:
+    name: Publish
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write # The OIDC ID token is used for authentication with JSR.
+    steps:
+      - name: Clone repository
+        uses: actions/checkout@v4
+
+      - name: Publish to JSR
+        run: npx jsr publish
+        working-directory: ./package/
