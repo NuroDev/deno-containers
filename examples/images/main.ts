@@ -1,4 +1,4 @@
-import { Client } from '@nurodev/containers';
+import { Client } from '@nurodev/docker';
 
 const client = new Client();
 
