@@ -1,6 +1,7 @@
 {
 	"name": "@nurodev/containers",
 	"version": "0.0.1",
+	"license": "MIT",
 	"imports": {
 		"~/": "./src/"
 	},
