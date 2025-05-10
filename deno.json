@@ -8,10 +8,9 @@
 	"lint": {
 		"rules": {}
 	},
-	"tasks": {
-	},
+	"tasks": {},
 	"workspace": [
 		"./examples/*",
-		"./packages/@nurodev/*"
+		"./package/"
 	]
 }
